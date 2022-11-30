@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+.container{
+    height: 500px;
+    width: 600px;
+    background-color: black;
+    position: relative;
+    top: 100px;
+    overflow: hidden;
+}
+
+
+
+.obstacle{
+    background-color: rgb(191, 13, 13);
+    width: 70px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    animation: animatonObstacle 2s infinite linear;
+
+}
+
+.howle{
+    background-color: black;
+    width: 70px;
+    height: 150px;
+    position: absolute;
+    top:50px;
+    left: 100%;
+    z-index: 2;
+    animation: animatonObstacle 2s infinite linear;
+}
+
+@keyframes animatonObstacle {
+    0%{
+        left:100%
+    }
+    100%{
+        left: -60px;
+    }
+}
+
+
+
+.bird{
+    height: 25px;
+    width: 25px;
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+}
+
+.bird img{
+    width: 100%;
+}
